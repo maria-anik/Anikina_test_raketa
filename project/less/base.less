@@ -1,0 +1,57 @@
+@import "variables.less";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: @color-main_black;
+  position: relative;
+  font-size: 24px;
+  line-height: 1.33;
+  font-family: "IBM Plex Sans";
+  transition: 0.3s;
+  font-weight: 300;
+
+  @media @view-tablets {
+    font-size: 20px;
+  }
+  @media @view-mobile2 {
+    font-size: 17px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 56px;
+
+  @media @view-tablets {
+    padding: 0 20px;
+  }
+}
+
+.btn {
+  background: @color-main_blue;
+  color: @color-main_white;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 190px;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 14px;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+
+  &:hover {
+    background: @color-main_red;
+  }
+}

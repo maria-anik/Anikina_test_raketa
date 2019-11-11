@@ -1,0 +1,245 @@
+@import "variables.less";
+
+.front {
+  @media @view-mobile2 {
+    padding-top: 63px;
+  }
+}
+
+.f-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% + 104px);
+  margin: 0 -52px;
+  padding: 60px 0;
+
+  @media @view-desktop {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+  }
+  @media @view-tablets {
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    padding: 30px 0 40px;
+  }
+
+
+  &__logo {
+    width: 66.66%;
+    padding: 0 52px;
+    display: flex;
+    align-items: center;
+
+    @media @view-desktop {
+      padding: 0 30px;
+    }
+
+    @media @view-tablets {
+      padding: 0 20px;
+      width: 100%;
+    }
+    @media @view-mobile2 {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo-name {
+    padding-right: 50px;
+    @media @view-tablets {
+      padding-right: 0px;
+    }
+    @media @view-mobile2 {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0px 0;
+    }
+  }
+  &__logo-text {
+    font-size: 70px;
+    line-height: 1;
+    font-weight: 600;
+
+    @media @view-mobile {
+      font-size: 55px;
+    }
+    @media @view-mobile2 {
+      font-size: 48px;
+    }
+  }
+  &__logo-text--2 {
+    color: @color-main_white;
+    text-shadow: @color-main_blue 1px 0, @color-main_blue 1px 1px, @color-main_blue 0 1px, @color-main_blue -1px 1px, @color-main_blue -1px 0,@color-main_blue -1px -1px, @color-main_blue 0 -1px,@color-main_blue 1px -1px;
+  }
+  
+  &__logo-img {
+    padding-right: 70px;
+    @media @view-mobile {
+      padding-right: 40px;
+    }
+    @media @view-mobile2 {
+      width: 100%;
+      padding-right: 0px;
+    }
+  }
+  &__logo-ico {
+    fill: @color-main_black;
+
+    .f-main__logo-fill {
+      fill: @color-main_white;
+    }
+    @media @view-mobile {
+      margin: auto;
+      display: block;
+      width: 150px;
+    }
+    @media @view-mobile2 {
+      width: 170px
+    }
+  }
+
+
+
+
+  &__advant {
+    width: 33.33%;
+    padding: 0 52px;
+    
+    @media @view-desktop {
+      padding: 0 30px;
+    }
+    @media @view-tablets {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(100% + 40px);
+      margin: 50px -20px 0;
+      padding: 0 20px;
+    }
+    @media @view-mobile {
+      width: 100%;
+      margin: 50px 0 0;
+    }
+  }
+
+  &__advant-item {
+    margin-bottom: 26px;
+    font-size: 40px;
+    line-height: 1.1;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    @media @view-desktop {
+      font-size: 35px;
+    }
+    @media @view-tablets {
+      width: 50%;
+      font-size: 40px;
+      padding: 0 20px;
+      margin: 0;
+    }
+    @media @view-mobile {
+      width: 100%;
+      font-size: 35px;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    @media @view-mobile2 {
+      font-size: 24px;
+    }
+  }
+
+  &__advant-unic {
+    color: @color-main_red;
+  }
+}
+
+
+.f-advant {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 104px);
+  margin: 0 -52px;
+  
+  @media @view-desktop {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+  }
+  @media @view-tablets {
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+  }
+  @media @view-mobile2 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  &__item {
+    width: 33.33%;
+    padding: 50px 51px 0;
+    margin-bottom: 48px;
+    position: relative;
+  
+    @media @view-desktop {
+      padding: 50px 30px 0;
+    }
+    @media @view-tablets {
+      padding: 50px 20px 0;
+    }
+    @media @view-mobile {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    @media @view-mobile2 {
+      width: 100%;
+      padding: 0 0 0 60px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__item-num {
+    color: @color-main_red;
+    font-size: 40px;
+    line-height: 1.1;
+    position: absolute;
+    top: 0;
+    left: 51px;
+    
+    @media @view-desktop {
+      left: 30px;
+    }
+    @media @view-tablets {
+      font-size: 35px;
+      left: 20px;
+    }
+    @media @view-mobile2 {
+      font-size: 24px;
+      left: 0px;
+      color: @color-main_black;
+    }
+  }
+}
+
+.f-info {
+  @media @view-mobile2 {
+    padding: 33px 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__list {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &__list-item {
+    margin-right: 20px;
+  }
+  &__list-ico {
+    fill: @color-main_blue;
+    transition: 0.3s;
+  }
+  &__list-item:hover &__list-ico {
+    fill: @color-main_red;
+  }
+}
